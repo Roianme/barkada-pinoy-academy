@@ -10,7 +10,7 @@
             --secondary: #ce1126;
             --accent: #ffc72c;
             --light: #f8f9fa;
-            --dark: #343a40;
+            --dark: #333;
         }
 
         body {
@@ -70,7 +70,7 @@
 
         .btn {
             display: inline-block;
-            background-color: var(--secondary);
+            background-color: var(--primary);
             color: white;
             padding: 10px 20px;
             border-radius: 5px;
@@ -88,7 +88,7 @@
         }
 
         .btn-outline {
-            background-color: transparent;
+            /* background-color: transparent; */
             border: 2px solid white;
         }
 
@@ -108,15 +108,15 @@
 
         .hero h1 {
             font-size: 3rem;
+            color: #333;
             margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
         .hero p {
             font-size: 1.2rem;
+            color: #333;
             max-width: 700px;
             margin: 0 auto 30px;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
         }
 
         .hero-buttons {
