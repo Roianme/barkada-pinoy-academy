@@ -14,7 +14,11 @@ class HeaderLoader {
       return;
     }
 
-    fetch(this.headerFile)
+    // Hide the header container until loaded to prevent flash
+    this.headerContainer.style.opacity = '0';
+    this.headerContainer.style.transition = 'opacity 0.3s ease';
+
+    fetch(this.headerFile, { cache: 'no-cache' })
       .then(response => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -22,18 +26,26 @@ class HeaderLoader {
         return response.text();
       })
       .then(html => {
+        // Inject header HTML
         this.headerContainer.innerHTML = html;
+        
+        // Initialize header logic
         this.initializeHeader();
+
+        // Fade in smoothly after content is ready
+        requestAnimationFrame(() => {
+          this.headerContainer.style.opacity = '1';
+        });
       })
       .catch(error => {
         console.error('Error loading header:', error);
         this.headerContainer.innerHTML = '<p>Error loading navigation</p>';
+        this.headerContainer.style.opacity = '1'; // ensure visibility even if error
       });
   }
 
   // Initialize header functionality
   initializeHeader() {
-    // Add active class to current page link
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     const navLinks = this.headerContainer.querySelectorAll('.nav-links a');
     
