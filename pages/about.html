@@ -12,25 +12,143 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+      <!-- Load the header script -->
+  <script src="/js/header-loader.js"></script>
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <div id="header-container">
+    <!-- Header will be loaded here by JavaScript -->
+    </div>
+
+     <!-- Page Header -->
+    <section class="page-header">
         <div class="container">
-            <nav>
-                <div class="logo">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span>Barkada Pinoy Academy</span>
-                </div>
-                <div class="nav-links">
-                    <a href="/index.html">Home</a>
-                    <a href="/pages/courses.html">Courses</a>
-                    <a href="/pages/about.html">About</a>
-                    <a href="/pages/enquiry-form.html">Enquiry Form</a>
-                    <a href="/pages/contact.html">Contact</a>
-                </div>
-            </nav>
+            <h1>About Barkada Pinoy Academy</h1>
+            <p>Founded with the mission to preserve and share Filipino culture, we are dedicated to creating meaningful connections through language learning and cultural education.</p>
         </div>
-    </header>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-content">
+        <div class="container">
+            <!-- Our Story Section -->
+            <div class="story-section">
+                <div class="section-title">
+                    <h2>Our Story</h2>
+                </div>
+                <div class="story-content">
+                    <div class="story-text">
+                        <h3>Building Bridges Through Culture</h3>
+                        <p>Barkada Pinoy Academy was established in 2018 by a group of Filipino educators and community leaders who recognized the need for authentic cultural education programs. The word "Barkada" means "group of friends" in Filipino, reflecting our core belief that learning happens best in a supportive, friendly environment.</p>
+                        <p>What started as small community classes has grown into a comprehensive academy offering various programs for learners of all ages and backgrounds. We serve both Filipino diaspora communities wanting to reconnect with their heritage and international students eager to explore Filipino culture.</p>
+                        <p>Today, we are proud to have helped thousands of students develop their language skills, deepen their cultural understanding, and build lasting friendships within our community.</p>
+                    </div>
+                    <div class="story-image">
+                        <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Filipino cultural celebration">
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Mission and Vision -->
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>To provide high-quality Filipino language and cultural education that fosters understanding, appreciation, and connection to Filipino heritage while building bridges between communities.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>To be the leading institution for Filipino cultural education, creating a global network of learners who celebrate and preserve Filipino heritage for future generations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Values</h2>
+            </div>
+            <div class="values-grid">
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h4>Community</h4>
+                    <p>We believe in the power of community and creating supportive learning environments where everyone feels welcome.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h4>Authenticity</h4>
+                    <p>We are committed to providing authentic cultural experiences and accurate language instruction.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4>Inclusivity</h4>
+                    <p>We welcome learners of all backgrounds and abilities, celebrating diversity within our community.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h4>Passion</h4>
+                    <p>Our work is driven by a genuine love for Filipino culture and a desire to share it with the world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>Barkada Pinoy Academy is dedicated to preserving and sharing Filipino culture and language with the world.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Cultural Street, Manila, Philippines</li>
+                        <li><i class="fas fa-phone"></i> +63 912 345 6789</li>
+                        <li><i class="fas fa-envelope"></i> info@barkadapinoy.edu.ph</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Barkada Pinoy Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
