@@ -97,6 +97,76 @@
             color: var(--primary);
         }
 
+         /* Page Header */
+        .page-header {
+            background: linear-gradient(rgba(0, 85, 164, 0.8), rgba(0, 85, 164, 0.9)), url('https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        /* About Content */
+        .about-content {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .story-section {
+            margin-bottom: 60px;
+        }
+
+        .story-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .story-text h3 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .story-text p {
+            margin-bottom: 15px;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .story-image {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .story-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, var(--primary), transparent);
+            margin: 60px 0;
+        }
+
         /* Hero Section */
         .hero {
             background-size: cover;
@@ -134,7 +204,7 @@
 
         .section-title {
             text-align: center;
-            margin-bottom: 50px;
+            margin: 50px;
         }
 
         .section-title h2 {
@@ -166,6 +236,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
+            justify-content: center;
         }
 
         .feature-card {
@@ -203,6 +274,147 @@
 
         .feature-card p {
             color: #666;
+        }
+
+
+        /* Teams Section */
+        .team-member {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: var(--light);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .member-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            border: 5px solid var(--primary);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member h3 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            color: var(--primary);
+        }
+
+        .team-member .position {
+            font-size: 1.1rem;
+            color: var(--secondary);
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .team-member p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* Course Section */
+        .course-header {
+            background: linear-gradient(135deg, var(--primary), #003d7a);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .course-header h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .course-level {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--dark);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .course-body {
+            padding: 25px;
+        }
+
+        .course-details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .course-duration, .course-price {
+            text-align: center;
+        }
+
+        .course-duration .value, .course-price .value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .course-duration .label, .course-price .label {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .course-description {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .course-features {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        .course-features li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+        }
+
+        .course-features li:last-child {
+            border-bottom: none;
+        }
+
+        .course-features li i {
+            color: var(--secondary);
+            margin-right: 10px;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--primary), #003d7a);
+            color: white;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
         }
 
         /* Footer */
