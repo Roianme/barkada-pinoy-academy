@@ -165,5 +165,27 @@
     <!-- Footer -->
     <div id="footer-container">
     </div>
+
+    <script>
+        document.getElementById('enquiryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simple form validation
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const course = document.getElementById('course').value;
+            
+            if (!firstName || !lastName || !email || !phone || !course) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // In a real application, you would send the form data to a server here
+            alert('Thank you for your enquiry! We will contact you soon.');
+            this.reset();
+        });
+    </script>
 </body>
 </html>
