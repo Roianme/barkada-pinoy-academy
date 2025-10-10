@@ -12,25 +12,158 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Load the header script -->
+    <script src="/js/header-loader.js"></script>
+
+    <!-- Load the footer script -->
+    <script src="/js/footer-loader.js"></script>
+    
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span>Barkada Pinoy Academy</span>
+    <div id="header-container">
+    </div>
+
+    <!-- Enquiry Form -->
+    <div class="container">
+        <div class="enquiry-section">
+            <!-- Form Section -->
+            <div class="form-container">
+                <div class="form-header">
+                    <h1>Course Enquiry Form</h1>
+                    <p>Ready to start your Filipino language journey? Fill out the form below and we'll get back to you soon!</p>
                 </div>
-                <div class="nav-links">
-                    <a href="/index.html">Home</a>
-                    <a href="/pages/courses.html">Courses</a>
-                    <a href="/pages/about.html">About</a>
-                    <a href="/pages/enquiry-form.html">Enquiry Form</a>
-                    <a href="/pages/contact.html">Contact</a>
+
+                <form id="enquiryForm">
+                    <h2 class="section-title">Student Information</h2>
+                    <p style="color: var(--gray); margin-bottom: 20px;">Please provide your details and course preferences. Fields marked with * are required.</p>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName" class="required">First Name</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName" class="required">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email" class="required">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="required">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+63 xxx xxx xxxx" required>
+                        </div>
+                    </div>
+
+                    <h2 class="section-title">Course Preferences</h2>
+
+                    <div class="form-group">
+                        <label for="course" class="required">Interested Course</label>
+                        <select id="course" name="course" required>
+                            <option value="" disabled selected>Select a course</option>
+                            <option value="beginner">Basic Filipino Language (Beginner)</option>
+                            <option value="intermediate">Intermediate Filipino</option>
+                            <option value="culture">Filipino Culture & History</option>
+                            <option value="advanced">Advanced Conversation</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="level">Current Filipino Level</label>
+                            <select id="level" name="level">
+                                <option value="" disabled selected>Select your level</option>
+                                <option value="none">No prior experience</option>
+                                <option value="basic">Basic (can introduce myself)</option>
+                                <option value="intermediate">Intermediate (can hold simple conversations)</option>
+                                <option value="advanced">Advanced (fluent but want to improve)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="schedule">Preferred Schedule</label>
+                            <select id="schedule" name="schedule">
+                                <option value="" disabled selected>Select preferred schedule</option>
+                                <option value="weekday-morning">Weekday Mornings</option>
+                                <option value="weekday-afternoon">Weekday Afternoons</option>
+                                <option value="weekday-evening">Weekday Evenings</option>
+                                <option value="weekend">Weekends</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Additional Information</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your learning goals, any questions you have, or special requirements..."></textarea>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Subscribe to our newsletter for updates on new courses and cultural events</label>
+                    </div>
+
+                    <button type="submit" class="btn">Submit Enquiry</button>
+                </form>
+            </div>
+
+            <!-- Contact Information Section -->
+            <div class="contact-container">
+                <div class="contact-header">
+                    <h2>Contact Information</h2>
                 </div>
-            </nav>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3><i class="fas fa-phone"></i> Phone</h3>
+                        <p>+63 2 8123 4567</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3><i class="fas fa-envelope"></i> Email</h3>
+                        <p>info@barkadapinoy.edu.ph</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3><i class="fas fa-map-marker-alt"></i> Address</h3>
+                        <p>123 Filipino Street<br>Cultural District<br>Manila, Philippines 1000</p>
+                    </div>
+                </div>
+
+                <div class="office-hours">
+                    <h3>Office Hours</h3>
+                    <div class="hours-item">
+                        <span class="hours-day">Monday - Friday</span>
+                        <span class="hours-time">9 AM - 6 PM</span>
+                    </div>
+                    <div class="hours-item">
+                        <span class="hours-day">Saturday</span>
+                        <span class="hours-time">9 AM - 3 PM</span>
+                    </div>
+                    <div class="hours-item">
+                        <span class="hours-day">Sunday</span>
+                        <span class="hours-time">Closed</span>
+                    </div>
+                </div>
+
+                <div class="quick-facts">
+                    <h3>Quick Facts</h3>
+                    <ul class="facts-list">
+                        <li><i class="fas fa-check"></i> Free trial class available</li>
+                        <li><i class="fas fa-check"></i> Small class sizes (max 12)</li>
+                        <li><i class="fas fa-check"></i> Flexible payment plans</li>
+                        <li><i class="fas fa-check"></i> Online & in-person options</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </header>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-container">
+    </div>
 </body>
 </html>
