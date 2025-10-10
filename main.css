@@ -447,18 +447,6 @@
             font-size: 1.1rem;
         }
 
-        .section-title {
-            font-size: 1.3rem;
-            color: var(--primary);
-            margin: 30px 0 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid var(--light-gray);
-        }
-
-        .section-title:first-of-type {
-            margin-top: 0;
-        }
-
         .required::after {
             content: " *";
             color: var(--secondary);
