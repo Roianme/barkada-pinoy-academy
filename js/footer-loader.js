@@ -2,7 +2,7 @@
 class FooterLoader {
   constructor() {
     this.footerContainer = null;
-    this.footerFile = '../footer.html';
+    this.footerFile = '/footer.html';
   }
 
   // Load footer into the specified container
@@ -52,7 +52,7 @@ class FooterLoader {
     navLinks.forEach(link => {
       const linkHref = link.getAttribute('href');
       if (linkHref === currentPage || 
-          (currentPage === 'index.html' && linkHref === '../index')) {
+          (currentPage === 'index.html' && linkHref === '/index')) {
         link.classList.add('active');
       }
     });
