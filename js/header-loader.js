@@ -2,7 +2,7 @@
 class HeaderLoader {
   constructor() {
     this.headerContainer = null;
-    this.headerFile = '../header.html';
+    this.headerFile = 'header.html';
   }
 
   // Load header into the specified container
