@@ -2,7 +2,7 @@
 class FooterLoader {
   constructor() {
     this.footerContainer = null;
-    this.footerFile = '/footer.html';
+    this.footerFile = 'footer.html';
   }
 
   // Load footer into the specified container
