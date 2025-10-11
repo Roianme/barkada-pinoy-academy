@@ -2,9 +2,9 @@
 class HeaderLoader {
   constructor() {
     this.headerContainer = null;
-    this.headerFile = '/header.html';
+    this.headerFile = '/barkada-pinoy-academy/header.html';
   }
-
+  
   // Load header into the specified container
   loadHeader(containerId = 'header-container') {
     this.headerContainer = document.getElementById(containerId);
