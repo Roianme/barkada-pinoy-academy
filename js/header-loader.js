@@ -2,7 +2,7 @@
 class HeaderLoader {
   constructor() {
     this.headerContainer = null;
-    this.headerFile = '/header.html';
+    this.headerFile = '../header.html';
   }
 
   // Load header into the specified container
@@ -52,7 +52,7 @@ class HeaderLoader {
     navLinks.forEach(link => {
       const linkHref = link.getAttribute('href');
       if (linkHref === currentPage || 
-          (currentPage === 'index.html' && linkHref === '/index')) {
+          (currentPage === 'index.html' && linkHref === '../index')) {
         link.classList.add('active');
       }
     });
