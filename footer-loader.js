@@ -2,7 +2,7 @@
 class FooterLoader {
   constructor() {
     this.footerContainer = null;
-    this.footerFile = '/barkada-pinoy-academy/footer.html';
+    this.footerFile = 'footer.html';
   }
 
   // Load footer into the specified container
